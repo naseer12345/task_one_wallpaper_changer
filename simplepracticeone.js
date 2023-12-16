@@ -1,2 +1,1 @@
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits)
+document.getElementById("hellotext").innerHTML = "byeee";
