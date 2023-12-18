@@ -15,7 +15,7 @@
 
 .main-container{
     width: 35em;
-    height: 50em;
+    height: 35em;
     border: 3px solid black;
     display: flex;
     justify-content: center;
