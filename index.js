@@ -13,25 +13,33 @@ const btnparentdiv = document.querySelector(".btndiv")
 const btn = document.createElement("button")
 btn.innerHTML="Customize"
 
-
-
+const iframe = document.createElement("iframe")
+iframe.src = "otherpage.html";
+iframe.style.width = "100%"
+iframe.style.height = "100%"
 let holdTimer;
 
 const mcbgElement = document.querySelector(".mcbg");
-const imgElement = document.querySelector('.img'); // Make sure this is the correct selector
-// Define btnparentdiv and btn if they're used in your code
-
+const imgElement = document.querySelector('.img'); 
+const mcbgdiv= document.querySelector(".mcbg")
 mcbgElement.addEventListener("mousedown", function() {
     // Start the timer when the mouse is held down
     holdTimer = setTimeout(function() {
         imgElement.style.width = '80%';
         imgElement.style.height = '80%';
-        // Make sure btnparentdiv and btn are defined and used correctly here
-        // btnparentdiv.appendChild(btn);
-    }, 3000); // 3000 milliseconds = 3 seconds
+        btnparentdiv.appendChild(btn);
+        
+    }, 500); 
 });
 
 mcbgElement.addEventListener("mouseup", function() {
     // Clear the timer when the mouse is released
     clearTimeout(holdTimer);
 });
+
+
+
+
+document.querySelector(".btndiv").addEventListener('click', function() {
+     mcbgdiv.replaceWith(iframe)
+  });
