@@ -42,4 +42,5 @@ mcbgElement.addEventListener("mouseup", function() {
 
 document.querySelector(".btndiv").addEventListener('click', function() {
      mcbgdiv.replaceWith(iframe)
+     btnparentdiv.remove()
   });
