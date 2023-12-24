@@ -14,7 +14,7 @@ const btn = document.createElement("button")
 btn.innerHTML="Customize"
 
 const iframe = document.createElement("iframe")
-iframe.src = "otherpage.html";
+iframe.src = "edittingPage.html";
 iframe.style.width = "100%"
 iframe.style.height = "100%"
 let holdTimer;
